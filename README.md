@@ -4,9 +4,12 @@
 * Orange are rooms filling up
 * Grey are not open yet
 
+Room Box Layout
+
 * Line 1 is the room #
 * Line 2 is the player count
 * Line 3 is the level of the room
+* Join Button
 
 ## Preview ##
 
