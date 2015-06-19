@@ -6,6 +6,8 @@
 // @author spAnser
 // @match *://steamcommunity.com/minigame*
 // @match *://steamcommunity.com//minigame*
+// @updateURL https://raw.githubusercontent.com/spAnser/steamSummerMinigame_newRooms/master/newRooms.user.js
+// @downloadURL https://raw.githubusercontent.com/spAnser/steamSummerMinigame_newRooms/master/newRooms.user.js
 // @grant GM_xmlhttpRequest
 // ==/UserScript==
 
