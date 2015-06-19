@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Monster Minigame Room Monitor
 // @namespace https://github.com/spAnser/steamSummerMinigame_newRooms
-// @version 1.2.2
+// @version 1.2.3
 // @description Monitors new Rooms for the Monster Minigame
 // @author spAnser
 // @match *://steamcommunity.com/minigame/
@@ -15,9 +15,6 @@ var lastRoomCheck = 47410 // This is the room the scripts starts of looking from
 var refreshSpeed = 2000 // 2000 is 2 seconds and should be fine
 var levelThreshhold = 100 // Any game that is over this level will be hidden automatically
 var checkSize = 10 // 10 rooms should be plenty to check at one time
-
-// https://github.com/doodlely/numfuzz/blob/master/src/numfuzz.js
-!function(){"use strict";var t={};t.fuzzy=function(t){return"number"!=typeof t&&(t=parseInt(t,10)),Math.abs(t)>=1e6?this.round(t/1e6,1)+"M":Math.abs(t)>=1e3?this.round(t/1e3,1)+"k":t.toString()},t.round=function(t,n){var u=Number((Math.floor(10*t)/10).toFixed(n));return u.toFixed(u%1===0?0:1)},window.NumFuzz=t}(),function(t){t.fn.numFuzz=function(){this.each(function(n,u){var e=parseInt(t(u).text(),10),r=NumFuzz.fuzzy(e);t(u).attr("title",e.toLocaleString()).text(r).data("numfuzz-val",e)})}}(jQuery);
 
 $J.fn.sortDivs = function sortDivs() {
     $J("> div", this[0]).sort(dec_sort).appendTo(this[0]);
@@ -76,7 +73,7 @@ function addRoom(room, size, level, watch) {
     )
     if (level > 0) {
         _room.append(
-            $J('<div class="level">lvl '+NumFuzz.fuzzy(level)+'</div>')
+            $J('<div class="level">lvl '+FormatNumberForDisplay(level)+'</div>')
         )
     } else {
         _room.append(
