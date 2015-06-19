@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Monster Minigame Room Monitor
 // @namespace https://github.com/spAnser/steamSummerMinigame_newRooms
-// @version 1.2
+// @version 1.2.1
 // @description Monitors new Rooms for the Monster Minigame
 // @author spAnser
 // @match *://steamcommunity.com/minigame*
@@ -12,7 +12,7 @@
 // ==/UserScript==
 
 var lastRoomCheck = 47010 // This is the room the scripts starts of looking from
-var refreshSpeed = 500 // 2000 is 2 seconds and should be fine
+var refreshSpeed = 2000 // 2000 is 2 seconds and should be fine
 var levelThreshhold = 100 // Any game that is over this level will be hidden automatically
 var checkSize = 10 // 10 rooms should be plenty to check at one time
 
