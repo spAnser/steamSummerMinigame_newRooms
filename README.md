@@ -4,6 +4,10 @@
 * Orange are rooms filling up
 * Grey are not open yet
 
+* Line 1 is the room #
+* Line 2 is the player count
+* Line 3 is the level of the room
+
 ## Preview ##
 
 ![preview](https://raw.githubusercontent.com/spAnser/steamSummerMinigame_newRooms/master/preview.png)
