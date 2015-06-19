@@ -4,8 +4,8 @@
 // @version 1.2.1
 // @description Monitors new Rooms for the Monster Minigame
 // @author spAnser
-// @match *://steamcommunity.com/minigame*
-// @match *://steamcommunity.com//minigame*
+// @match *://steamcommunity.com/minigame/
+// @match *://steamcommunity.com/minigame
 // @updateURL https://raw.githubusercontent.com/spAnser/steamSummerMinigame_newRooms/master/newRooms.user.js
 // @downloadURL https://raw.githubusercontent.com/spAnser/steamSummerMinigame_newRooms/master/newRooms.user.js
 // @grant GM_xmlhttpRequest
