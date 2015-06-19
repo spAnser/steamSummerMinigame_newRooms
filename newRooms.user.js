@@ -11,7 +11,7 @@
 // @grant GM_xmlhttpRequest
 // ==/UserScript==
 
-window.lastRoomCheck = 46800 // This is the room the scripts starts of looking from
+window.lastRoomCheck = 47000 // This is the room the scripts starts of looking from
 window.refreshSpeed = 2000 // 2000 is 2 seconds and should be fine
 window.levelThreshhold = 100 // Any game that is over this level will be hidden automatically
 window.checkSize = 10 // 10 rooms should be plenty to check at one time
